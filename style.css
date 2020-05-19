@@ -1,35 +1,7 @@
-body{
-	padding:0;
-	margin: 0;
-	font-family: sans-serif;
-	height: 100vh;
-	background: linear-gradient(120deg,#FFF200,#DA36E2);
-	background-size: 400% 400%;
-	animation: BackgroundAnimation 30s ease infinite;
-
-}
-
-.banner-text{
-	width: 100%;
-	position: absolute;
-	z-index: 10;
-}
-.banner-text ul{
-	height: 50px;
-	float: right;
-}
-.banner-text ul li{
-	display: inline-block;
-	padding: 40px 15px;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 20px;
-}
-.banner-text h2{
-	text-align: center;
-	color: #fff;
-	font-size: 50px;
-	margin-top: 20%;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 nav{
 	display: flex;
@@ -42,7 +14,7 @@ nav{
 .logo{
 	color: rgb(226,226,226);
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	font-size: 20px;
 }
 .nav-links{
@@ -56,7 +28,7 @@ nav{
 .nav-links a{
 	color: rgb(226,226,226);
 	text-decoration: none;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	font-weight: bold;
 	font-size: 14px;
 }
@@ -72,6 +44,7 @@ nav{
 	background-color: #fff;
 	margin: 5px;
 }
+
 @media screen and (max-width: 1024px){
 	.nav-links{
 	width: 60%;
@@ -97,14 +70,13 @@ nav{
 	.nav-links li{
 		opacity: 0;
 	}
-	.burger {
+    .burger {
 		display: block;
 	}
 }
 .nav-active{
 	transform: translateX(0%);
 }
-
 .box-area{
 	position: absolute;
 	top: 0;
@@ -171,9 +143,57 @@ nav{
 		opacity: 0;
 	}
 }
+.home{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+}
+.home-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+        height: 50%;
+        width: 50%;
+    }
+    h1{
+        font-size: 160%;
+        margin: 30px 0px;
+    }
+    p{
+        font-size: 25px;
+    }
 
-@keyframes BackgroundAnimation{
-	0%{background-position: 0% 50%;}
-	50%{background-position: 100% 50%;}
-	100%{background-position: 0% 50%;}
+.about{
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+}
+
+.about-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+        height: 70%;
+        width: 70%;
+    }
+    h1{
+        font-size: 120%;
+        margin: 30px 0px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+.home{
+    background-image: linear-gradient(to top,#a18cd1 0%, #fbc2eb 100%);
+}
+.about{
+    background-image: linear-gradient(to top,#020024 0%, #28314c 35%, #00d4ff 100%);
 }
