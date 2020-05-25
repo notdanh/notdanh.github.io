@@ -71,8 +71,16 @@ body{
 .content{
     
     padding: 20px;
+}
+.container .box:hover h4
+{
+    opacity: 0;
+    display: none;
+}
+.content h4{
     
-
+    color: aliceblue;
+    display: block;
 }
 
 .box .content h2{
