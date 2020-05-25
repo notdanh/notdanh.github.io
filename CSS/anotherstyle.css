@@ -69,7 +69,7 @@ body{
 }
 
 .content{
-    position: relative;
+    
     padding: 20px;
     
 
@@ -100,6 +100,15 @@ body{
     color: #fff;
     font-size: 16px;
     background-size: cover;
+    position: absolute;
+    height: 86%;
+    width: 94%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.box .content p::-webkit-scrollbar{
+    width: 1px;
+    
 }
 .box .content a  {
     border-radius: 17px;
